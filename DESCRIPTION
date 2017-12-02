@@ -14,7 +14,7 @@ Suggests:
     MASS
 Imports: 
     callr,
-    httr,
-    dplyr
+    dplyr,
+    httr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
