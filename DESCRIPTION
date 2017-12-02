@@ -1,0 +1,20 @@
+Package: aocodeR
+Type: Package
+Title: Advent of COde helper functions & templates
+Version: 0.1.0
+Author: Anna Krystalli
+Maintainer: The package maintainer <annakrystalli@googlemail.com>
+Description: Functions and templates to help import AoC inputs, prepare vignettes
+    and share outputs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat,
+    MASS
+Imports: 
+    callr,
+    httr,
+    dplyr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1

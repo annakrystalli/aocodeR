@@ -1,0 +1,132 @@
+---
+title: "--- XXX Puzzle Title XXXX ---"
+author: "advent_of_code_username"
+date: 2017-12-XX
+output: html_document
+---
+
+```{r knitr-opts-chunk, include=FALSE}
+# Update knitr chunk options
+# https://yihui.name/knitr/options/#chunk-options
+knitr::opts_chunk$set(
+  comment = NA,
+  fig.align = "center",
+  tidy = FALSE,
+  fig.path = paste0("figure/", knitr::current_input(), "/")
+)
+```
+
+```{r last-updated, echo=FALSE, results='asis'}
+# Insert the date the file was last updated
+cat(sprintf("**Last updated:** %s", Sys.Date()))
+```
+
+```{r code-version, echo=FALSE, results='asis'}
+# Insert the code version (Git commit SHA1) if Git repository exists and R
+# package git2r is installed
+if(requireNamespace("git2r", quietly = TRUE)) {
+  if(git2r::in_repository()) {
+    code_version <- substr(git2r::commits()[[1]]@sha, 1, 7)
+  } else {
+    code_version <- "Unavailable. Initialize Git repository to enable."
+  }
+} else {
+  code_version <- "Unavailable. Install git2r package to enable."
+}
+cat(sprintf("**Code version:** %s", code_version))
+rm(code_version)
+```
+
+
+> [***See more puzzles***](http://annakrystalli.me/advent_of_code/)
+
+[**Advent of Code**](https://adventofcode.com/2017/)
+
+
+## Session information
+
+<!-- Insert the session information into the document -->
+```{r session-info}
+sessionInfo()
+```
+
+
+## Brief
+
+
+
+# Let's go
+
+### Packages & functions
+```{r, message = F}
+library(tidyverse)
+library(testthat)
+```
+
+With the help of my colleague [**Phil Tooley**](https://twitter.com/acceleratedsci), I've written a function to call the input for each day in directly from the Advent of Code server. It defaults to inputs for `2017` puzzles and to the path I store my **session cookie** at (inputs are user specific so the user needs to know who you are to give you the right input). But you can override that by supplying a different year to `year` or the path to a `.txt` file containing your session cookie to argument `cookie_path`. See function & more details [here](https://github.com/annakrystalli/advent_of_code/blob/master/R/functions.R).
+
+```{r}
+source(paste0(rprojroot::find_rstudio_root_file(), "/R/functions.R"))
+```
+
+
+## Input
+
+```{r}
+
+aoc_get_input(day, cookie_path)
+```
+
+
+## Test
+```{r}
+
+```
+
+## deploy
+
+```{r}
+
+```
+
+
+## Success!
+
+![](../screenshots/test-Day2_2.png)
+
+<br>
+
+# ---- Part 2 ----
+
+
+## Brief
+
+
+
+# Let's go
+
+
+### Packages
+
+## Functions
+```{r}
+
+```
+
+## Test
+```{r}
+
+```
+
+## deploy
+
+```{r}
+
+```
+
+## Success!
+
+![](../screenshots/test-Day2_2.png)
+
+
+> template based on [worflowr] standalone template
