@@ -1,6 +1,6 @@
 ---
 title: "--- XXX Puzzle Title XXXX ---"
-author: "advent_of_code_username"
+author: "annakrystalli"
 date: 2017-12-XX
 output: html_document
 ---
@@ -71,14 +71,18 @@ library(aocodeR)
 <!-- Supply day. cookie_path defaults to path in my project -->
 ```{r}
 input <- aoc_get_input(day, cookie_path = paste0(rprojroot::find_rstudio_root_file(),
-                                                 "/secrets/session_cookie.txt"))
+                                                 "/secrets/session_cookie.txt")) 
 input
 ```
 
+## Functions
+```{r}
+
+```
 
 ## Test
 ```{r}
-
+#expect_equal(,)
 ```
 
 ## deploy
@@ -90,9 +94,11 @@ input
 
 ## Success!
 
-![](../screenshots/test-Day2_2.png)
+![](../screenshots/Day1_1.png)
 
 <br>
+
+***
 
 # ---- Part 2 ----
 
@@ -103,14 +109,9 @@ input
 
 # Let's go
 
-## Functions
-```{r}
-
-```
-
 ## Test
 ```{r}
-
+#expect_equal(,)
 ```
 
 ## deploy
@@ -121,7 +122,10 @@ input
 
 ## Success!
 
-![](../screenshots/test-Day2_2.png)
+![](../screenshots/Day1_2.png)
 
+<br>
 
-> template based on the [worflowr](https://github.com/jdblischak/workflowr) standalone template
+***
+
+template based on the [workflowr](https://github.com/jdblischak/workflowr) standalone template
