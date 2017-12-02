@@ -53,6 +53,7 @@ sessionInfo()
 
 ## Brief
 
+<!-- Insert Part 1 of the puzzle brief here -->
 
 
 # Let's go
@@ -61,20 +62,16 @@ sessionInfo()
 ```{r, message = F}
 library(tidyverse)
 library(testthat)
-```
-
-With the help of my colleague [**Phil Tooley**](https://twitter.com/acceleratedsci), I've written a function to call the input for each day in directly from the Advent of Code server. It defaults to inputs for `2017` puzzles and to the path I store my **session cookie** at (inputs are user specific so the user needs to know who you are to give you the right input). But you can override that by supplying a different year to `year` or the path to a `.txt` file containing your session cookie to argument `cookie_path`. See function & more details [here](https://github.com/annakrystalli/advent_of_code/blob/master/R/functions.R).
-
-```{r}
-source(paste0(rprojroot::find_rstudio_root_file(), "/R/functions.R"))
+library(aocodeR)
 ```
 
 
 ## Input
 
+<!-- Needs day and cookie path to be supplied -->
 ```{r}
-
-aoc_get_input(day, cookie_path)
+input <- aoc_get_input(day, cookie_path)
+input
 ```
 
 
@@ -100,13 +97,10 @@ aoc_get_input(day, cookie_path)
 
 
 ## Brief
-
+<!-- Insert Part 2 of the puzzle brief here -->
 
 
 # Let's go
-
-
-### Packages
 
 ## Functions
 ```{r}
@@ -129,4 +123,4 @@ aoc_get_input(day, cookie_path)
 ![](../screenshots/test-Day2_2.png)
 
 
-> template based on [worflowr] standalone template
+> template based on the [worflowr](https://github.com/jdblischak/workflowr) standalone template
