@@ -68,9 +68,10 @@ library(aocodeR)
 
 ## Input
 
-<!-- Needs day and cookie path to be supplied -->
+<!-- Supply day. cookie_path defaults to path in my project -->
 ```{r}
-input <- aoc_get_input(day, cookie_path)
+input <- aoc_get_input(day, cookie_path = paste0(rprojroot::find_rstudio_root_file(),
+                                                 "/secrets/session_cookie.txt"))
 input
 ```
 
