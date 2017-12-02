@@ -1,7 +1,7 @@
 Package: aocodeR
 Type: Package
 Title: Advent of COde helper functions & templates
-Version: 0.1.0
+Version: 0.1.1
 Author: Anna Krystalli
 Maintainer: The package maintainer <annakrystalli@googlemail.com>
 Description: Functions and templates to help import AoC inputs, prepare vignettes
