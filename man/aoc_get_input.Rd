@@ -12,6 +12,8 @@ aoc_get_input(day, year = 2017, cookie_path, encoding = "UTF-8")
 \item{year}{numeric. Year for which input is required}
 
 \item{cookie_path}{character string. Path to the cookie string stored as a text file.}
+
+\item{encoding}{character string. Encoding of result. Defaults to "UTF-8".}
 }
 \value{
 Returns user specific puzzle input as returned by the advent of code server.
