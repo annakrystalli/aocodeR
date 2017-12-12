@@ -9,11 +9,12 @@ Description: Functions and templates to help import AoC inputs, prepare vignette
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/annakrystalli/aocodeR
+BugReports: https://github.com/annakrystalli/aocodeR/issues
 Suggests: 
     testthat,
     MASS
 Imports: 
-    callr,
     dplyr,
     httr
 Roxygen: list(markdown = TRUE)
